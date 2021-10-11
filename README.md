@@ -1,15 +1,12 @@
 서울기술교육센터 프로젝트
 ==============
-IoT Smart Home 
+Smart Box 
 -------------
-1. raspberry-client
-	- qt와 구글어시스턴트를 활용해 관리자 역할을 수행
-	- 서버에 등록된 모든 기기를 통제할 권한을 갖음
+1. smartbox-client
+	- 아두이노를 활용한 클라이언트 코드
+	- 센서 코드 분할
+	- 서버로 데이터 송수신하여 센서 동작
 
-2. raspberry-server
-	- mariadb 를 통해 기기 및 데이터 관리
-	- 연결된 기기들의 통신을 받아 처리
-	
-3. raspberry-image-processing
-	- 웹캠을 활용해 영상처리를 진행
-	- 침입자 감지 및 영상 캡쳐 등을 처리
+2. smartbox-server
+	- mariadb 를 통해 간단한 데이터 관리
+		* 운송장 번호와 카드번호 등록 및 조회
